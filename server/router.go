@@ -11,7 +11,6 @@ func NewRouter() *gin.Engine {
 	r.Static("/static", "./static")
 	r.StaticFile("/favicon.ico", "./static/favicon.ico")
 
-
 	/* Heartbeat */
 	r.GET("/status", func(c *gin.Context) {
 		c.String(http.StatusOK, "ok")
@@ -19,7 +18,12 @@ func NewRouter() *gin.Engine {
 
 	/* Homepage */
 	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "home.tmpl", gin.H{"title": "bradeNicholson", "desc": "Software Engineer In California"})
+		c.HTML(http.StatusOK, "home.tmpl", gin.H{"title": "bradenNicholson", "desc": "Software Engineer In California"})
+	})
+
+	/* Projects */
+	r.GET("/*", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "home.tmpl", gin.H{"title": "bradenNicholson", "desc": "Software Engineer In California"})
 	})
 
 	return r

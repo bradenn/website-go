@@ -38,7 +38,7 @@
     <h2>open-source projects</h2>
     <div class="element">
         <h3><a href="https://github.com/bradenn/udap" target="_blank">udap</a></h3>
-        <span>Go, Typescript, Vue, and Python</span>
+        <span>Go, C++, Typescript, Vue, and Python</span>
         <div>UDAP (Universal Device Aggregation Platform) provides a unified interface for aggregating various disjoint
             components. Udap can control many unique devices and services with modules, furthermore modules can be made
             to control the aforementioned devices.
@@ -48,53 +48,82 @@
                     href="https://github.com/davisking/dlib">Dlib</a>), sensor data aggregation (motion detection, air
             quality, temperature, humidity, etc.), security camera monitoring, and more.
         </div>
-    </div>
-    <div class="element">
-        <h3><a href="https://github.com/bradenn/stargate" target="_blank">stargate</a></h3>
-        <span>Java: Spigot, MongoDB</span>
-        <div>A Spigot plugin that adds multi-dimensional teleportation via portals based on the Stargate franchise.
+        <div class="element" style="margin-top: -0.5rem">
+            <h3><a href="https://github.com/bradenn/udap/tree/main/embeded/sentry" target="_blank">sentry</a></h3>
+            <span>C++, ESP-IDF</span>
+            <div>Firmware for a ceiling-mounted automated laser pointer I made to entertain my cat with. The system is entirely controlled through UDAP.</div>
+        </div>
+        <div class="element" style="margin-top: -0.5rem">
+            <h3><a href="https://github.com/bradenn/udap/tree/main/embeded/haptics" target="_blank">haptics</a></h3>
+            <span>C++, ESP-IDF</span>
+            <div>Firmware for controlling a haptic engine through sockets over a Wi-Fi connection. The haptic engine mounts on the back of an endpoint touchscreen and provided haptic feedback when a user moves sliders or presses buttons.
+            </div>
+        </div>
+        <div class="element" style="margin-top: -0.5rem">
+            <h3><a href="https://github.com/bradenn/udap/tree/main/embeded/motion" target="_blank">motion</a></h3>
+            <span>C++, ESP-IDF</span>
+            <div>Firmware for a multi-sensor motion sensor that interfaces with UDAP. The sensor makes requests to UDAP when a sensor is triggered.</div>
         </div>
     </div>
     <div class="element">
-        <h3><a href="https://github.com/bradenn/space-go-api" target="_blank">space-go-api</a></h3>
-        <span>Go: gin</span>
-        <div>This is an API made in go that serves information about the galaxy. The data was adapted from edsm.net.
+        <h3><a href="https://github.com/netwatcherio" target="_blank">netwatcher.io</a></h3>
+        <span>Go, Vue, Typescript</span>
+        <div>Netwatcher is a network monitoring and mapping tool used by ISPs & MSPs to ensure network quality for IP
+            communication. The program aggregates data from multiple <a
+                    href="https://github.com/netwatcherio/netwatcher-agent">agents</a> and the <a
+                    href="https://github.com/netwatcherio/netwatcher-control">controller</a> analyses and displays the
+            data on a <a
+                    href="https://github.com/netwatcherio/netwatcher-client">webpage</a>.
         </div>
     </div>
     <div class="element">
         <h3><a href="https://github.com/bradenn/monoverse" target="_blank">monoverse</a></h3>
-        <span>Go: SDL, OpenGL</span>
+        <span>Go, SDL, OpenGL</span>
         <div>Monoverse is a universe physics simulation engine. Monoverse can simulate conways game of life (on a grid or a hexagonal tesselation), it can simulate gravity, charge, and a some atom configurations.
         </div>
     </div>
     <div class="element">
+        <h3><a href="https://github.com/bradenn/stargate" target="_blank">stargate</a></h3>
+        <span>Java, Spigot, MongoDB</span>
+        <div>A Spigot plugin that adds multidimensional teleportation via portals based on the Stargate franchise.
+        </div>
+    </div>
+    <div class="element">
         <h3><a href="https://github.com/bradenn/Enclave" target="_blank">enclave</a></h3>
-        <span>Java: Spigot, Mongo</span>
+        <span>Java, Spigot, Mongo</span>
         <div>enclave is a land claiming system designed for SMP Minecraft servers.</div>
     </div>
 
+
     <h2>university projects</h2>
     <div class="element">
-        <h3><a href="https://github.com/bradenn/barnes-hut" target="_blank">n-bodies</a></h3>
-        <span>C++: SDL</span>
-        <div>The objective of this project was to create and demonstrate the use of the barnes-hut n-bodies algorithm. This project is an SDL desktop application written in C++.
-             After finishing this project, I rebuilt it in Golang and fixed a lot of the major issues, see <a
-                    href="https://github.com/bradenn/monoverse" target="_blank">monoverse</a></div>
+        <h3><a href="https://github.com/bradenn/nbodies" target="_blank">n-bodies</a></h3>
+        <span>C++, SDL, OpenGL, OpenMP</span>
+        <div>The objective of this project was to create and demonstrate an n-bodies simulator that used parallel
+            computing. This project is an SDL desktop application written in C++.
+            After finishing this project, I rebuilt it in Golang and implemented more esoteric features, see <a
+                    href="https://github.com/bradenn/monoverse" target="_blank">monoverse</a>.
+        </div>
     </div>
     <div class="element">
-        <h3><a href="https://github.com/bradenn/turnin-nexus" target="_blank">turnin-nexus</a></h3>
-        <span>Typescript: MongoDB, GraphQL, Passport</span>
+        <h3><a href="https://github.com/bradenn/turnin-nexus" target="_blank">turnin</a></h3>
+        <span>Typescript, MongoDB, GraphQL, Passport</span>
         <div>An automated programming assignment grading system. This module handles the business logic of the turnin system. See 'client' and 'compute' modules for more.</div>
+        <div class="element">
+            <h3><a href="https://github.com/bradenn/turnin-compute" target="_blank">turnin-compute</a></h3>
+            <span>Go, Gin, Git, SeaweedFS, AWS</span>
+            <div>This module handles compilation, grading, plagiarism checking, and other computationally intense operations. This module is part of the Turnin modules system.</div>
+        </div>
+        <div class="element">
+            <h3><a href="https://github.com/bradenn/turnin-nexus" target="_blank">turnin-client</a></h3>
+            <span>Typescript, Vue, Apollo, GraphQL, Vue</span>
+            <div>This is the Vue client used to interact with the Turnin system. This client interacts with the 'nexus' and 'file' modules via GraphQL & Rest respectively.</div>
+        </div>
     </div>
     <div class="element">
-        <h3><a href="https://github.com/bradenn/turnin-compute" target="_blank">turnin-compute</a></h3>
-        <span>Go: Gin</span>
-        <div>This modules handles compilation, grading, plagiarism checking, and other computationally intense operations. This module is part of the Turnin modules system.</div>
-    </div>
-    <div class="element">
-        <h3><a href="https://github.com/bradenn/turnin-nexus" target="_blank">turnin-client</a></h3>
-        <span>Vue: Apollo, GraphQL, Vue</span>
-        <div>This is the Vue client used to interact with the Turnin system. This client interacts with the 'nexus' and 'file' modules via GraphQL & Rest respectively.</div>
+        <h3><a href="https://github.com/ChicoState/Wild-Life" target="_blank">wildlife</a></h3>
+        <span>Go, Typescript, Python</span>
+        <div>Wildlife is a web app that allows users to upload an image and get analytic data about possible irritants on a plant or other piece of nature.</div>
     </div>
     <h2>opensource</h2>
     <div class="element">

@@ -27,6 +27,10 @@ html {
     line-height: 1.15;
 }
 
+b {
+    color: var(--mono-2) !important;
+}
+
 root {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 400;
@@ -164,13 +168,18 @@ h2 {
 .element > h3.desc{
     color: var(--hue-5) !important;
 }
-.element > a{
+
+.element > a {
     display: block;
     color: var(--hue-3) !important;
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.25em !important;
     font-weight: 500;
     margin-bottom: 0;
+}
+
+.element > .element > h3 > a {
+    color: var(--hue-2);
 }
 
 .element > h3 > a {
